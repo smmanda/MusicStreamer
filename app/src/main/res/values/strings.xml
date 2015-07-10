@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Music Streamer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tracks">Top 10 Tracks</string>
+    <string name="title_activity_music_player">Music Player</string>
+    <string name="pref_location_label">Location</string>
+    <string name="pref_loc_us">us</string>
+    <string name="pref_loc_uk">uk</string>
+    <string name="pref_loc_label_us">US</string>
+    <string name="pref_loc_label_uk">UK</string>
+    <string name="pref_country_code">countrycode</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="no_artists_found">No artists found</string>
+    <string name="default_artist">coldplay</string>
+</resources>

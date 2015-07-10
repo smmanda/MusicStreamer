@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignEnd="@+id/textViewNoArtistFound"
+    android:layout_alignRight="@+id/textViewNoArtistFound"
+    android:layout_centerVertical="true"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <EditText
+        android:id="@+id/artistsSearch"
+        style="@style/Widget.AppCompat.SearchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:accessibilityLiveRegion="polite"
+        android:autoText="false"
+        android:hint="Search Artist"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textViewNoArtistFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/artistsSearch"
+        android:layout_centerHorizontal="true"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:layout_marginTop="10dp" />
+
+    <ListView
+        android:id="@+id/listview_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/artistsSearch"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>
+

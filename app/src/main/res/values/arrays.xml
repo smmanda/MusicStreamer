@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pref_location_values">
+        <item>@string/pref_loc_us</item>
+        <item>@string/pref_loc_uk</item>
+    </string-array>
+
+    <string-array name="pref_location_options">
+        <item>@string/pref_loc_label_us</item>
+        <item>@string/pref_loc_label_uk</item>
+    </string-array>
+
+
+</resources>
