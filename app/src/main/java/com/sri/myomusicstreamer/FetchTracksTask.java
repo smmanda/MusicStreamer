@@ -1,11 +1,11 @@
-package com.sri.musicstreamer;
+package com.sri.myomusicstreamer;
 
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.sri.musicstreamer.parcelable.TrackParcelable;
-import com.sri.musicstreamer.adapters.TrackAdapter;
+import com.sri.myomusicstreamer.parcelable.TrackParcelable;
+import com.sri.myomusicstreamer.adapters.TrackAdapter;
 
 import java.util.ArrayList;
 import java.util.HashMap;

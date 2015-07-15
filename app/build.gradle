@@ -3,10 +3,9 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 22
     buildToolsVersion '22.0.1'
-
     defaultConfig {
-        applicationId "com.sri.musicstreamer"
-        minSdkVersion 10
+        applicationId 'com.sri.myomusicstreamer'
+        minSdkVersion 18
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -23,13 +22,22 @@ android {
             dirs 'libs'
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
+    repositories {
+        maven {
+            // this must point to the myorepository distributed with the Myo SDK
+            url '/Users/smanda/Downloads/myo-android-sdk-0.10.0/myorepository'
+        }
+    }
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile(name:'spotify-web-api-android-0.1.0', ext:'aar')
+    compile 'com.thalmic:myosdk:0.10.0@aar'
+    compile(name: 'spotify-web-api-android-0.1.0', ext: 'aar')
     compile 'com.squareup.retrofit:retrofit:1.9.0'
     compile 'com.squareup.okhttp:okhttp:2.2.0'
 }

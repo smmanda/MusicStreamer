@@ -1,4 +1,4 @@
-package com.sri.musicstreamer;
+package com.sri.myomusicstreamer;
 
 import android.annotation.TargetApi;
 import android.content.Intent;

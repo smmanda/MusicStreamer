@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sri.musicstreamer" >
+    package="com.sri.myomusicstreamer" >
 
     <!-- This permission is necessary to perform network access. -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    // Required for communicating with the Myo device
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +20,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.sri.myomusicstreamer.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,23 +29,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.sri.myomusicstreamer.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.sri.myomusicstreamer.MainActivity"
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.sri.myomusicstreamer.MainActivity" />
         </activity>
         <activity
-            android:name=".TracksActivity"
+            android:name="com.sri.myomusicstreamer.TracksActivity"
             android:label="@string/title_activity_tracks"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.sri.myomusicstreamer.MainActivity">
         </activity>
         <activity
-            android:name=".MusicPlayer"
+            android:name="com.sri.myomusicstreamer.MusicPlayer"
             android:label="@string/title_activity_music_player"
-            android:parentActivityName=".TracksActivity">
+            android:parentActivityName="com.sri.myomusicstreamer.TracksActivity">
         </activity>
     </application>
 

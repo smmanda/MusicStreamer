@@ -1,4 +1,4 @@
-package com.sri.musicstreamer;
+package com.sri.myomusicstreamer;
 
 import android.content.Context;
 import android.content.SharedPreferences;

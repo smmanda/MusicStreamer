@@ -1,4 +1,4 @@
-package com.sri.musicstreamer.parcelable;
+package com.sri.myomusicstreamer.parcelable;
 
 import android.os.Parcel;
 import android.os.Parcelable;

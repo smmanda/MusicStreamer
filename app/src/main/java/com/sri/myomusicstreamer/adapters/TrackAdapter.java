@@ -1,4 +1,4 @@
-package com.sri.musicstreamer.adapters;
+package com.sri.myomusicstreamer.adapters;
 
 import android.content.Context;
 import android.util.Log;
@@ -9,9 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.sri.musicstreamer.R;
-import com.sri.musicstreamer.Utility;
-import com.sri.musicstreamer.parcelable.TrackParcelable;
+import com.sri.myomusicstreamer.R;
+import com.sri.myomusicstreamer.Utility;
+import com.sri.myomusicstreamer.parcelable.TrackParcelable;
 
 import java.util.List;
 

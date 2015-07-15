@@ -1,4 +1,4 @@
-package com.sri.musicstreamer;
+package com.sri.myomusicstreamer;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -17,6 +17,7 @@ public class TracksActivity extends ActionBarActivity {
 //                    .add(R.id.fragmentTracks, new TracksActivityFragment())
 //                    .commit();
 //        }
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 
@@ -34,11 +35,15 @@ public class TracksActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        if(id == android.R.id.home){
+            onBackPressed();
+            return true;
+        }
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+       else if (id == R.id.action_settings) {
             return true;
         }
 
-        return super.onOptionsItemSelected(item);
+        return false;
     }
 }

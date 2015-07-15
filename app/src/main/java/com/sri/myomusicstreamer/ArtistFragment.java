@@ -1,4 +1,4 @@
-package com.sri.musicstreamer;
+package com.sri.myomusicstreamer;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,8 +15,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.sri.musicstreamer.adapters.ArtistAdapter;
-import com.sri.musicstreamer.parcelable.ArtistParcelable;
+import com.sri.myomusicstreamer.adapters.ArtistAdapter;
+import com.sri.myomusicstreamer.parcelable.ArtistParcelable;
 
 import java.util.ArrayList;
 import java.util.Collections;
